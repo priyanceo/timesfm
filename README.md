@@ -19,6 +19,9 @@ This open version is not an officially supported Google product.
 > **Personal fork note:** I'm using this for experimenting with fine-tuning on
 > custom retail demand datasets. See my notes in `notes/` for observations and
 > results as I work through the examples.
+>
+> **Retail dataset tip:** Weekly seasonality (period=7) works best with a
+> context length of at least 512 in my experiments. See `notes/retail_context_length.md`.
 
 **Latest Model Version:** TimesFM 2.5
 
@@ -63,12 +66,4 @@ Since the Sept. 2025 launch, the following improvements have been completed:
 1.  ✅ Flax version of the model for faster inference.
 2.  ✅ Covariate support via XReg (see Oct. 2025 update).
 3.  ✅ Documentation, examples, and agent skill (see `timesfm-forecasting/`).
-4.  ✅ Fine-tuning example with LoRA via HuggingFace Transformers + PEFT (see `timesfm-forecasting/examples/finetuning/`).
-5.  ✅ Unit tests for core layers, configs, and utilities (see `tests/`).
-
-### Install
-
-1.  Clone the repository:
-    ```shell
-    git c
-```
+4.  ✅ Fine-tuning example with LoRA via HuggingFace Tran
