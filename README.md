@@ -22,6 +22,11 @@ This open version is not an officially supported Google product.
 >
 > **Retail dataset tip:** Weekly seasonality (period=7) works best with a
 > context length of at least 512 in my experiments. See `notes/retail_context_length.md`.
+>
+> **Fine-tuning tip:** When fine-tuning on retail data with LoRA, I found
+> `lora_r=16` and `lora_alpha=32` with a learning rate of `1e-4` to be a good
+> starting point. Lower ranks (r=8) tend to underfit on datasets with strong
+> promotional spikes. See `notes/lora_hyperparams.md` for the full sweep.
 
 **Latest Model Version:** TimesFM 2.5
 
@@ -64,6 +69,4 @@ Comparing to TimesFM 2.0, this new 2.5 model:
 Since the Sept. 2025 launch, the following improvements have been completed:
 
 1.  ✅ Flax version of the model for faster inference.
-2.  ✅ Covariate support via XReg (see Oct. 2025 update).
-3.  ✅ Documentation, examples, and agent skill (see `timesfm-forecasting/`).
-4.  ✅ Fine-tuning example with LoRA via HuggingFace Tran
+2.  ✅ Covariate support 
