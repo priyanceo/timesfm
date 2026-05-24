@@ -26,6 +26,9 @@ Basic usage:
     ... )
     >>> tfm.load_from_checkpoint(repo_id="google/timesfm-1.0-200m")
     >>> forecast = tfm.forecast(inputs, freq=[0])
+
+Note (personal): For GPU usage, set backend="gpu" and ensure JAX is installed
+with CUDA support. The 200m model works well for most daily/hourly data.
 """
 
 from timesfm.timesfm_base import TimesFmBase
