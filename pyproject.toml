@@ -34,6 +34,12 @@ xreg = [
     "jax[cuda]",
     "scikit-learn",
 ]
+# Personal note: pinning pandas for local experiments to avoid API changes
+dev = [
+    "pandas>=2.0.0,<3.0.0",
+    "matplotlib>=3.7.0",
+    "jupyter",
+]
 
 [tool.ruff]
 line-length = 88
@@ -42,4 +48,3 @@ indent-width = 2
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
-
