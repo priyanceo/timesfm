@@ -33,4 +33,8 @@ Run tests:
 pytest v1/tests/
 ```
 
+> **Personal note:** I've found running `pytest v1/tests/ -v` more helpful for debugging
+> since it shows individual test names. Also worth checking `src/timesfm/` directly
+> for any model config changes before running the full suite.
+
 See `README.md` for full developer setup.
