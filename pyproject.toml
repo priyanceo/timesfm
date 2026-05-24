@@ -39,6 +39,8 @@ dev = [
     "pandas>=2.0.0,<3.0.0",
     "matplotlib>=3.7.0",
     "jupyter",
+    # Added for easier debugging and profiling during local experiments
+    "ipdb",
 ]
 
 [tool.ruff]
