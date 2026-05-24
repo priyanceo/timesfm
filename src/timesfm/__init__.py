@@ -29,6 +29,11 @@ Basic usage:
 
 Note (personal): For GPU usage, set backend="gpu" and ensure JAX is installed
 with CUDA support. The 200m model works well for most daily/hourly data.
+
+Frequency guide (freq parameter):
+    0 = high frequency (sub-daily, e.g. hourly, minutely)
+    1 = medium frequency (daily, weekly)
+    2 = low frequency (monthly, quarterly, yearly)
 """
 
 from timesfm.timesfm_base import TimesFmBase
