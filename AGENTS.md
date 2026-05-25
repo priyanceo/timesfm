@@ -36,5 +36,8 @@ pytest v1/tests/
 > **Personal note:** I've found running `pytest v1/tests/ -v` more helpful for debugging
 > since it shows individual test names. Also worth checking `src/timesfm/` directly
 > for any model config changes before running the full suite.
+>
+> **Tip:** If tests fail due to missing dependencies, run `pip install -e '.[dev]'`
+> from the repo root first — caught me off guard the first time.
 
 See `README.md` for full developer setup.
