@@ -39,5 +39,9 @@ pytest v1/tests/
 >
 > **Tip:** If tests fail due to missing dependencies, run `pip install -e '.[dev]'`
 > from the repo root first — caught me off guard the first time.
+>
+> **Tip:** On Apple Silicon (M1/M2/M3), you may also need to set
+> `PYTORCH_ENABLE_MPS_FALLBACK=1` before running tests if you hit MPS-related
+> errors: `export PYTORCH_ENABLE_MPS_FALLBACK=1 && pytest v1/tests/ -v`
 
 See `README.md` for full developer setup.
