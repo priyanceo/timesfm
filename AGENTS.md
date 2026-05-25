@@ -43,5 +43,9 @@ pytest v1/tests/
 > **Tip:** On Apple Silicon (M1/M2/M3), you may also need to set
 > `PYTORCH_ENABLE_MPS_FALLBACK=1` before running tests if you hit MPS-related
 > errors: `export PYTORCH_ENABLE_MPS_FALLBACK=1 && pytest v1/tests/ -v`
+>
+> **Tip:** When experimenting with forecasting horizon lengths, I've had good results
+> keeping the output length at or below the context length (e.g. context=512,
+> horizon=128). Going much beyond that tends to degrade forecast quality noticeably.
 
 See `README.md` for full developer setup.
